@@ -1,0 +1,2 @@
+Method overloading in Python is the ability to define multiple methods with the same name but different parameters. Unlike some other languages, Python does not support method overloading natively. However, you can achieve similar functionality using default arguments or by explicitly checking the type and number of arguments within the method.
+In this example, the add method can take up to three arguments. If fewer arguments are provided, the default values (0) are used.
