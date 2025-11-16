@@ -1,0 +1,35 @@
+# Creating variables
+product_name = "Laptop" # String variable
+quantity = 5 # Integer variable
+price = 45000.75 # Float variable
+available = True # Boolean variable
+# Performing operations
+total_cost = quantity * price
+# Displaying variable values
+print("Product:", product_name)
+print("Quantity:", quantity)
+print("Price per unit:", price)
+print("Available:", available)
+print("Total Cost:", total_cost)
+# Checking data types
+print("Data type of product_name:", type(product_name))
+print("Data type of quantity:", type(quantity))
+print("Data type of price:", type(price))
+print("Data type of available:", type(available))
+print("Data type of total_cost:", type(total_cost))
+
+
+
+
+Output:
+Product: Laptop
+Quantity: 5
+Price per unit: 45000.75
+Available: True
+Total Cost: 225003.75
+Data type of product_name: <class 'str'>
+Data type of quantity: <class 'int'>
+Data type of price: <class 'float'>
+Data type of available: <class 'bool'>
+Data type of total_cost: <class 'float'>
+Result:
