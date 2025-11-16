@@ -1,0 +1,18 @@
+AIM:
+
+To creating a Pie Chart in R Programming using Command
+PROCEDURE:
+A pie chart of a qualitative data sample consists of pizza wedges that show the frequency distribution graphically.
+The following script creates a pie chart.
+
+1. This starts a pie chart function. The “x” parameter is the data that needs to be charted. In this line, the feed variable in the chickwts data frame is extracted to a table since the pie chart 2.These lines define the main title and colors used for the pie chart. These parameters are the same as was seen in other graphs in this lab.
+
+3. This tells R to use the labels used in the feed variable as the labels on the pie chart. # Count of Chicks by Feed
+Code:
+
+pie(x =
+table(chickwts$feed),
+
+main = "Count of Chicks by Feed", col = rainbow(6),
+labels = c(levels(chickwts$feed))
+)
