@@ -1,0 +1,31 @@
+Aim:
+To study and demonstrate the use of logical operators (and, or, not) in Python.
+
+
+Procedure:
+1.	Open Python (IDLE, Jupyter Notebook, or any IDE).
+2.	Declare boolean variables with values True or False.
+3.	Apply logical operators and, or, and not on the variables.
+4.	Display the results using the print() function.
+5.	Execute the program and verify the output.
+
+
+Program (Code):
+# Exercise: Logical Operators in Python
+
+
+# Declaring boolean variables x = True
+y = False
+
+
+# Applying logical operators print("x =", x, " y =", y)
+print("x and y:", x and y) # True only if both are True print("x or y:", x or y)	 # True if at least one is True print("not x:", not x)	# Negates the value of x print("not y:", not y)	# Negates the value of y
+
+Output:
+x = True y = False x and y: False
+x or y: True
+ 
+not x: False not y: True
+
+Result:
+The program was executed successfully. Logical operators and, or, and not were demonstrated with boolean values, and their truth table behavior was verified.
