@@ -1,0 +1,38 @@
+AIM:
+
+Creating a Bar Plot using R Programming Commands.
+
+PROCEDURE:
+
+A bar graph of a qualitative data sample consists of vertical parallel bars that show the frequency distribution graphically. A bar plot is used to display the frequency count for categorical data.
+The following figure is a bar plot showing the number of automobiles with three, four, and five gears according to the mtcars data frame.
+
+
+
+These types of visuals are more effective than a table full of numbers and they are easy to generate with R.
+Steps: Bar Plot
+
+1.	The following script creates a simple bar plot. Note: this is one long R command that has been broken up over several lines to make it easier to understand.
+
+2.	This creates a bar plot using the barplot function. The first argument sent to the function is the data source for the heights of each bar in the plot. In this case, R creates a table from the gears variable in mtcars and then uses that table as data input for the plot. All of the other lines in this script embellish the bar plot to make it more usable.
+
+3.	The “main” attribute sets the main title for the bar plot. In general, for any graphic in R main is used to set the title of the graph.
+ 
+4.	This creates the label for the x-axis.
+
+5.	This creates the label for the y-axis.
+
+6.	This sets the color palette for the graph. In this case, the rainbow palette is used for the graph. Three colors were requested from that palette but specifying any number larger than three would have worked and created a slightly different palette. Experimentation is needed to find the most suitable palette for any given graph. (Note: More information can be found in the About Colors section in the appendix.)
+# Simple Bar Plot
+barplot(height = table(mtcars$gear), main = "Number of Cars By Gears", xlab = "Gears",
+ylab = "Count", col = cm.colors(3)
+)
+Clustered Bar Plot
+A clustered bar plot (sometimes called a “Grouped Bar plot”) displays two or more categorical variables. In general, clustered bar plots are best at showing relationships between variables but not so good for determining the absolute size of each variable.
+
+ 
+# Clustered Bar Plot With Gradient Colors colpal <- colorRampPalette(c("blue", "white")) barplot(height
+= table(mtcars$cyl, mtcars$gear), main = "Cars by Gears and Cylinders",
+xlab = "Gears", ylab = "Count", legend = TRUE, beside = TRUE,
+args.legend = list(title = "Cylinders"), col = colpal(3)
+)
