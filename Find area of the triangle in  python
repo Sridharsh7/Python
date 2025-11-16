@@ -1,0 +1,22 @@
+AIM
+To write a python program to find the area of a triangle.
+PROCEDURE
+Step 1: Get the values of Breadth and Height from the user. Step 2: Use the formula ½*b*h to find the area of triangle. Step 3: Print the results.
+
+SOURCE CODE
+b=int(input('Enter breadth of a triangle: ')) h=int(input("Enter height of a triangle: ")) area=(b*h)/2
+print('The area of triangle is',area)
+
+
+OUTPUT
+Enter breadth of a triangle: 4 Enter height of a triangle: 6 The area of triangle is 12.0
+
+
+
+
+
+
+
+
+RESULT
+Thus the area of a triangle has been found out successfully.
