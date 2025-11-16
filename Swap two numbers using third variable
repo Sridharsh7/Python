@@ -1,0 +1,25 @@
+AIM
+To write a python program to swap two numbers using third variable.
+
+
+PROCEDURE
+Step 1: Get the values of x and y.
+Step 2: Swap the values of two variables using a third variable called temp. Step 3: Print the results.
+
+SOURCE CODE
+x = 10
+y = 50
+
+
+# Swapping of two variables # Using third variable
+temp = x x = y
+y = temp
+
+
+print("Value of x:", x) print("Value of y:", y)
+
+OUTPUT
+Value of x: 50 Value of y: 10
+
+RESULT
+Thus the two variable has been swapped using a third variable successfully.
