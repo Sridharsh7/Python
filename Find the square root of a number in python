@@ -1,0 +1,28 @@
+AIM
+To write a python program to find the square root.
+PROCEDURE
+Step 1: Get an integer number.
+Step 2: Find the square root of the number.
+Step 3: Print the results.
+
+
+
+SOURCE CODE
+# To take the input from the user
+num = float(input('Enter a number: ')) num_sqrt = num ** 0.5
+print('The square root of %0.3f is %0.3f'%(num ,num_sqrt))
+
+
+
+OUTPUT
+Enter a number: 690
+The square root of 690.000 is 26.268
+
+
+
+
+
+
+
+RESULT
+Thus the square root for the given number has been performed successfully.
