@@ -1,0 +1,27 @@
+AIM
+To write a python program to find the largest among three numbers.
+PROCEDURE
+1.	Get the value for num1,num2 and num3
+2.	Use the if elif and else statement to find largest number
+3.	Print the result
+SOURCE CODE
+# Python program to find the largest number among the three input numbers # change the values of num1, num2 and num3
+# for a different result num1 = 10
+num2 = 14
+num3 = 12
+
+
+if (num1 >= num2) and (num1 >= num3): largest = num1
+elif (num2 >= num1) and (num2 >= num3): largest = num2
+else:
+largest = num3
+
+
+print("The largest number is", largest)
+
+
+OUTPUT
+The largest number is 14.0.
+
+RESULT
+Thus, the program is executed successfully
