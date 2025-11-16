@@ -1,0 +1,74 @@
+Aim:
+To study and implement control structures in Python, including conditional statements (if, if- else, if-elif-else) and loops (for, while).
+
+
+Procedure:
+1.	Open Python (IDLE, Jupyter Notebook, or any IDE).
+2.	Write a program to demonstrate:
+o	Decision-making using if, if-else, and if-elif-else.
+o	Iteration using for loop and while loop.
+3.	Print appropriate outputs for each case.
+4.	Execute the program and verify the results.
+
+
+Program (Code):
+# Exercise: Control Structures in Python
+
+
+# 1. Conditional Statements num = 10
+
+# if statement if num > 0:
+print("Number is positive")
+
+
+# if-else statement if num % 2 == 0:
+print("Number is even") else:
+print("Number is odd")
+ 
+# if-elif-else statement if num < 0:
+print("Number is negative") elif num == 0:
+print("Number is zero") else:
+print("Number is positive")
+
+
+print("	")
+
+
+# 2. Looping Statements
+
+
+# for loop
+print("For loop: Printing numbers from 1 to 5") for i in range(1, 6):
+print(i)
+
+
+print("	")
+
+
+# while loop
+print("While loop: Printing numbers from 1 to 5") i = 1
+while i <= 5: print(i)
+i += 1
+
+
+Output:
+Number is positive Number is even Number is positive
+ 
+ 
+
+For loop: Printing numbers from 1 to 5 1
+2
+3
+4
+5
+
+
+While loop: Printing numbers from 1 to 5 1
+2
+3
+4
+5
+
+
+Result:
+The program was executed successfully. Different control structures in Python (if, if-else, if-elif- else, for loop, and while loop) were demonstrated with correct outputs.
