@@ -1,0 +1,32 @@
+Aim:
+To study and demonstrate the use of arithmetic operators in Python.
+
+
+Procedure:
+1.	Open Python (IDLE, Jupyter Notebook, or any IDE).
+2.	Declare numeric variables and assign values.
+3.	Apply arithmetic operators (+, -, *, /, //, %, **) on the variables.
+4.	Use the print() function to display results for each operator.
+5.	Execute the program and verify the output.
+
+
+Program (Code):
+# Exercise: Arithmetic Operators in Python
+
+
+# Declaring variables
+a = 15
+b = 4
+
+
+# Applying arithmetic operators print("a =", a, " b =", b) print("Addition (a + b):", a + b) print("Subtraction (a - b):", a - b) print("Multiplication (a * b):", a * b) print("Division (a / b):", a / b) print("Floor Division (a // b):", a // b) print("Modulus (a % b):", a % b)
+print("Exponentiation (a ** b):", a ** b)
+ 
+Output:
+a = 15 b = 4
+Addition (a + b): 19 Subtraction (a - b): 11 Multiplication (a * b): 60 Division (a / b): 3.75 Floor Division (a // b): 3 Modulus (a % b): 3
+Exponentiation (a ** b): 50625
+
+
+Result:
+The program was executed successfully. Different arithmetic operators in Python were applied on numeric variables, and their results were displayed.
