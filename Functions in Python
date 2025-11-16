@@ -1,0 +1,32 @@
+Aim:
+To understand the concept of functions in Python and learn how to define and call them for code reusability.
+
+
+Procedure:
+1.	Open Anaconda Navigator and launch Jupyter Notebook (or any Python IDE).
+2.	Create a new Python file or notebook.
+3.	Define a function using the def keyword.
+o	Example:
+o	def greet(name):
+o	print("Hello,", name, "Welcome to Python Programming!")
+4.	Call the function with different arguments (values).
+5.	greet("Alice")
+6.	greet("Bob")
+7.	Execute the program and observe the output.
+
+
+Code Example:
+# Defining a function def greet(name):
+"""This function greets the person by name""" print("Hello,", name, "Welcome to Python Programming!")
+
+# Calling the function with arguments greet("Alice")
+greet("Bob")
+
+
+Output:
+ 
+Hello, Alice Welcome to Python Programming! Hello, Bob Welcome to Python Programming!
+
+Result:
+The concept of functions in Python was successfully implemented.
+We learned how to define a function, pass parameters, and call the function to achieve reusable and modular code.
