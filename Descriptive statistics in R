@@ -1,0 +1,20 @@
+AIM:
+To create a Descriptive Statistics using R Programming Commands.
+PROCEDURE:
+>require("datasets") # Load Dataset Package
+>data(cars)
+>summary(cars$speed) # Summary for one variable Min. 1st Qu. Median	Mean 3rd Qu.	Max.
+4.0	12.0	15.0	15.4	19.0	25.0
+>summary(cars) # Summary for entire table speeddist Min. : 4.0 Min. : 2.00 1st
+Qu.:12.0 1st Qu.: 26.00
+Median :15.0 Median : 36.00
+Mean :15.4 Mean : 42.98 3rd Qu.:19.0  3rd  Qu.:  56.00  Max.
+:25.0  Max.  :120.00
+>fivenum(cars$speed) [1] 4
+12 15 19 25
+>help(package = "psych")
+>install.packages("psych") #Install psych package
+>require("psych") # Load psych package
+>describe(cars)
+vars n mean	sd median trimmed mad min max range skew kurtosis se speed 1 50 15.40 5.29	15 15.47 5.93 4 25	21 -0.11	-0.67 0.75
+dist	2 50 42.98 25.77	36  40.88 23.72  2 120  118 0.76	0.12 3.64
