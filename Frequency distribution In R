@@ -1,0 +1,45 @@
+AIM:
+
+To calculate the Frequency distribution in R programming.
+
+PROCEDURE:
+
+A data sample is called qualitative, also known as categorical, if its values belong to a collection of known defined non-overlapping classes. Common examples include student letter grade (A, B, C, D or F), commercial bond rating (AAA, AAB,) and consumer clothing shoe sizes (1, 2, 3,).
+The tutorials in this section are based on an R built-in data frame named painters. It is a compilation of technical information of a few eighteenth century classical painters. The data set belongs to the MASS package, and has to be pre-loaded into the R workspace prior to its use.
+
+
+
+
+
+
+
+Da Udine	10	8	16	3	A
+Da Vinci	15	16	4	14	A
+Del Piombo	8	13	16	7	A
+Del Sarto	12	16	9	8	A
+Fr. Penni	0	15	8	0	A
+Guilio Romano
+........	15
+.........	16	4	14	A
+
+The last School column contains the information of school classification of the painters. The schools are named as A, B, ...,etc, and the School variable is qualitative.
+ 
+For further details of the paintersdata set, please consult the R documentation.
+>	help(painters)	
+
+The frequency distribution of a data variable is a summary of the data occurrence in a collection of non-overlapping categories.
+Example
+
+In the data set painters, the frequency distribution of the School variable is a summary of the number of painters in each school.
+Problem
+
+Find the frequency distribution of the painter schools in the data set painters.
+
+Solution
+
+We apply the table function to compute the frequency distribution of the School variable.
+
+Answer
+
+The frequency distribution of the schools is:
+
