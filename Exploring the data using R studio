@@ -1,0 +1,66 @@
+AIM
+To write a R program to explore the data using R studio.
+
+PROCEDURE
+
+
+Step 1: Create a sample dataset.
+Step 2: Install and load the ggplot2 package for data visualization.
+Step 3: Create a histogram of ages.
+Step 4: Create a box plot of income.
+
+SOURCE CODE
+# Create a sample dataset data <- data.frame(
+ID = 1:10,
+Age = c(25, 30, 22, 40, 35, 28, 55, 29, 37, 45),
+Income = c(40000, 50000, 32000, 60000, 55000, 45000, 75000, 52000, 68000, 80000),
+Education = c("High School", "Bachelor's", "High School", "Master's", "PhD", "Bachelor's", "PhD", "Master's", "PhD", "Bachelor's"),
+Gender = c("Male", "Female", "Male", "Female", "Male", "Male", "Female", "Female", "Male", "Male")
+)
+head(data) summary(data$Age) summary(data$Income) table(data$Education) table(data$Gender)
+# Install and load the ggplot2 package for data visualization install.packages("ggplot2")
+library(ggplot2)
+
+# Create a histogram of ages
+ggplot(data, aes(x = Age)) + geom_histogram(binwidth = 5, fill = "blue") + labs(title = "Age Distribution")
+ 
+# Create a box plot of income
+ggplot(data, aes(x = "", y = Income)) + geom_boxplot(fill = "green") + labs(title = "Income Distribution")
+OUTPUT
+ID Age Income	Education Gender
+1	1	25	40000 High School	Male
+2	2	30	50000	Bachelor's Female
+3	3	22	32000 High School	Male
+4	4	40	60000	Master's Female
+5	5	35	55000	PhD	Male
+6	6	28	45000	Bachelor's	Male
+
+Min. 1st
+22.00	Qu.	Median
+28.25	32.50	Mean 3rd
+34.60	Qu.
+39.25	Max.
+55.00
+
+Min. 1st	
+Qu.	Median	
+Mean 3rd	
+Qu.	
+Max.
+32000	46250	53500	55700	66000	80000
+
+Bachelor's High	
+School	
+Master's	
+PhD
+3	2	2	3
+
+Female	Male
+4	6
+
+
+
+
+
+RESULT
+Thus the data has been explored in various ways using R studio successfully.
