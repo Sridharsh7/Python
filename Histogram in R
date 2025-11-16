@@ -1,0 +1,19 @@
+AIM:
+To Create a Histogram in R Programming Command.
+
+PROCEDURE:
+A histogram is a graph that shows the distribution of data that are continuous in nature, for example, age or height. A histogram resembles a bar chart but there is an important difference: a histogram is used for continuous data while a bar chart is used for categorical data. To emphasize that difference, histograms are normally drawn with no space between the bars (the data are continuous along the entire x-axis) while bar charts are normally drawn with a small space between bars (the data are categorical along the x-axis).
+The following script creates an example histogram.
+Line 2: This is the beginning of the histogram function (it ends on Line 8). For this histogram the Speed variable from the morley data frame is specified as the data source for the histogram.
+Lines 3-5: This creates the main title of the histogram along with the labels for the x-axis and y- axis.
+Line 6: To create a histogram, R analyzes the values contained in a variable and creates “bins” for those values. That means that many of the continuous values will be grouped into a single bin for analysis. The “breaks” parameter tells R how many breaks to allow in the variable. In this case, eight breaks are specified, which would create nine bins. R will analyze the data and use the “breaks” parameter as a “suggestion” and will only use that number of breaks if it makes sense for the data being graphed. Often, changing the number of breaks by just one or two will not change the histogram produced so researchers should play around with the “breaks” number to get the best possible representation of the data.
+Line 7: This specifies that 10 colors will be used from the “cm.color” palette to shade the various bars in the histogram. Researchers need to experiment a bit with the color palette and number of colors to get the best result; however, “cm.color” along with the number of bars in the histogram seems to work well for this histogram. (Note: More information about color can be found in the About Colors section in the appendix.)
+# Histogram
+code:
+hist(morley$Speed,
+main = "Morley's Experiment", xlab = "Speed",
+ 
+ylab = "Frequency", breaks = 8,
+col = cm.colors(10)
+
+)
