@@ -1,0 +1,19 @@
+AIM:
+To importing and exporting the data using R Programming
+PROCEDURE:
+The sample data can also be in comma separated values (CSV) format. Each cell inside such data file is separated by a special character, which usually is a comma, although other characters can be used as well.
+The first row of the data file should contain the column names instead of the actual data. Here is a sample of the expected format.
+After we copy and paste the data above in a file named "mydata.csv" with a text editor, we can read the data with the function read.csv.
+
+
+
+
+
+1 100	a1	b1
+2 200	a2	b2
+3 300	a3	b3
+
+
+
+
+INFERENCE:
