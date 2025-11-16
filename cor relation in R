@@ -1,0 +1,65 @@
+
+AIM:
+To analyze and interpret correlation using Pearson’s r, Spearman’s Rho and Kendall’s Tau Measures.
+
+
+PROCEDURE:
+Correlation is a method used to describe a relationship between the independent (or x-axis) and dependent (or y-axis) variables in some research project. A correlation is a number between -1.0 and +1.0, where 0.0 means there is no correlation between the two variables and either +1.0 or -
+1.0 means there is a perfect correlation. A positive correlation means that as one variable increases the other also increases.
+
+Correlation Descriptions
+Correlation	Description
++.70 or higher	Very strong positive
++.40 to +.69	Strong positive
++.30 to +.39	Moderate positive
++.20 to +.29	Weak positive
++.19 to -.19	No or negligible
+-.20 to -.29	Weak negative
+-.30 to -.39	Moderate negative
+-.40 to -.69	Strong negative
+-.70 or less	Very strong negative
+
+
+Pearson’s r
+
+Pearson’s Product-Moment Correlation Coefficient (normally called Pearson’s r) is a measure of the strength of the relationship between two variables having continuous data that are normally distributed (they have bell-shaped curves).
+The following script demonstrates how to calculate Pearson’s r.
+Line 2: This is the start of the cor.test function, which calculates the correlation between two variables. That function requires the x-axis variable be listed first then the y-axis variable.
+Line 3: This is a continuation of the cor.test function call and specifies the method to be Pearson’s r. Since Pearson’s r is the default method for the cor.test function this line did not need to be included but it is used in this example from the mtcars dataset,since the specification will be
+ 
+important in later examples in this lab. # Pearson's r
+cor.test(airquality$Wind,	airquality$Ozone,
+method = "pearson")
+
+Pearson's product-moment correlation
+
+data: airquality$Wind and airquality$Ozone t = -8.0401, df = 114, p-value = 9.272e-13
+alternative hypothesis: true correlation is not equal to 0 95 percent confidence interval:
+-0.7063918 -0.4708713
+sample estimates: cor
+-0.6015465
+
+Categorical Data
+
+When the one or both data elements are categorical then Spearman’s rho or Kendall’s tau is used to calculate the correlation. Other than the process used, the concept is exactly the same as for Pearson’s r and the result is a correlation between -1.0 and +1.0 where the strength and direction of the correlation is determined by its value. Spearman’s rho is used when at least one variable is ordered data and typically involves larger data samples while Kendall’s tau can be used for any type of categorical data but is more accurate for smaller data samples.
+Spearman’s rho
+The following script demonstrates using cor.test to calculate correlations from the esoph data frame using Spearman’s rho. The process for this calculation is the same as for Pearson’s r except the method specified is “spearman”. There is one other difference between this script and the first. Notice on line 2 that esoph$agegp is inside an as.numeric function. Since agegp uses text like “25-34” instead of a number this converts that to a number for Spearman’s rho. (Note: This script will generate a warnings about p-values but that can be safely ignored for this tutorial.)
+# Spearman's rho cor.test(as.numeric(esoph$agegp),	esoph$ncases, method = "spearman")
+ 
+Spearman's rank correlation rho
+data: as.numeric(esoph$agegp) and esoph$ncases S = 57515, p-value = 1.029e- 06
+alternative hypothesis: true rho is not equal to 0 sample estimates:
+rho 0.49354
+37
+
+Kendall’s tau
+
+The following script demonstrates using cor.test to calculate correlations from the npk data frame using Kendall’s tau. The process for this calculation is the same as for Pearson’s r except the method specified is “kendall”. As in the Spearman example, the first variable must be converted to numeric values. Also, this function will generate a warning but that can be ignored for this lab.
+# Kendall's tau cor.test(as.numeric(npk$N), npk$yield, method = "kendall")
+
+Kendall's rank correlation tau
+
+data: as.numeric(npk$N) and npk$yield z = 2.3687, p-value = 0.01785
+alternative hypothesis: true tau is not equal to 0 sample estimates:
+tau 0.41357
+21
